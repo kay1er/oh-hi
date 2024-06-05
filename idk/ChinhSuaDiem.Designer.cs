@@ -68,7 +68,7 @@
             ThemMonHoc.TabIndex = 35;
             ThemMonHoc.Text = "Lưu";
             ThemMonHoc.UseVisualStyleBackColor = true;
-            ThemMonHoc.Click += ThemMonHoc_Click;
+            ThemMonHoc.Click += ChinhSuaDiem_Click;
             // 
             // label4
             // 

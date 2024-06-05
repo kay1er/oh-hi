@@ -71,5 +71,11 @@ namespace idk
             ThongKeDiem thongKeDiem = new ThongKeDiem();
             thongKeDiem.Show(this);
         }
+
+        private void chỉnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChinhSuaDiem edit = new ChinhSuaDiem();
+            edit.Show(this);
+        }
     }
 }

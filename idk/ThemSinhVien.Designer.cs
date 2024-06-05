@@ -218,6 +218,7 @@
             maSV.Name = "maSV";
             maSV.Size = new Size(178, 23);
             maSV.TabIndex = 18;
+            maSV.Leave += maSV_Leave;
             // 
             // label8
             // 

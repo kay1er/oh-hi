@@ -43,15 +43,15 @@ namespace idk
         {
 
             SinhVien sinhVien = new SinhVien();
-            string masv = maSV.Text.Trim();
+            int masv = Convert.ToInt32(maSV.Text.Trim());
             string hoten = HoTen.Text.Trim();
             DateTime ngaysinh = dateTimePicker1.Value;
             string quequan = QueQuan.Text.Trim();
             string gioitinh = "Nam";
             string lop = Lop.Text.Trim();
-            string khoa = KhoaHoc.Text.Trim();
+            int khoa = Convert.ToInt32(KhoaHoc.Text.Trim());
             string diachi = DiaChi.Text.Trim();
-            string sdt = SDT.Text.Trim();
+            int sdt = Convert.ToInt32(SDT.Text.Trim());
 
             if (radioButton2.Checked)
             {

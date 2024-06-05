@@ -18,15 +18,15 @@ namespace idk
             SinhVien sinhVien = new SinhVien();
 
             // Lấy dữ liệu từ các trường nhập liệu
-            string masv = maSV.Text.Trim();
+            int masv = Convert.ToInt32(maSV.Text.Trim());
             string hoten = HoTen.Text.Trim();
             DateTime ngaysinh = dateTimePicker1.Value;
             string quequan = QueQuan.Text.Trim();
             string gioitinh = "Nam";
             string lop = Lop.Text.Trim();
-            string khoa = KhoaHoc.Text.Trim();
+            int khoa = Convert.ToInt32(KhoaHoc.Text.Trim());
             string diachi = DiaChi.Text.Trim();
-            string sdt = SDT.Text.Trim();
+            int sdt = Convert.ToInt32(SDT.Text.Trim());
 
             // Kiểm tra nếu radioButton2 (giới tính Nữ) được chọn
             if (radioButton2.Checked)
@@ -95,6 +95,18 @@ namespace idk
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void maSV_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                int masv = Convert.ToInt32(maSV.Text.Trim());
+            }
+            catch (FormatException d)
+            {
+                MessageBox.Show("Mã sinh viên không họp lệ","Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
